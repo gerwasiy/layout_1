@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 21.83px;
+    z-index: 1;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+header {
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    background-color:white  ;
+    
+     
+}
+
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    position: relative;
+}
+
+.home::after {
+    content: "";
+    background: #828282;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+   top: 0px;
+
+}
+
+header>nav>p>a {
+    font-size: 18px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    flex-direction: row;
+    color: #828282;
+    text-decoration: none;
+
+}
+
+
+
+header>nav>p>a:hover {
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.name>h1 {
+    font-size: 47.34px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    line-height: 58.61px;
+
+}
+
+.home {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.home-text {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end
+}
+
+.bio {
+
+    flex-direction: column;
+    display: flex;
+}
+
+.ru-eng {
+     
+    margin-bottom: 25px ;
+    font-family: 'Gilroy-Bold', sans-serif;
+    transform: rotate(-90deg) translateY(25px);
+    
+    }
+
+.home-image {
+    margin-top: 50px;
+    margin-bottom: 105px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;  
+}
+.home-image>img{
+    width: 100%;
+    transition-duration: 0.3s;
+   
+   }
+   .home-image>img:hover{
+       transform: scale(1.05);
+       transition-duration: 0.3s;
+   }
+h1 {
+    font-size: 34px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.about-me-text-block>p {
+    font-size: 18px;
+    line-height: 21.83px;
+    text-align: center;
+}
+
+.about-me-text-block {
+    display: flex;
+    flex-direction: column;
+    
+    height: 218px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.about-me>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+
+}
+
+.about-me {
+
+    background-color: #F6F6F6
+}
+
+.skills>div {
+    height: 610px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+    padding: 100px 0px;
+}
+
+
+
+.skills-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.skills-images>img{
+    transition-duration:0.3s;
+}
+.skills-images>img:hover{
+transition-duration:0.3s;
+transform:scale(1.05)   
+}
+.skills>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio {
+    background: #F6F6F6;
+    height: 2253px;
+    padding: 100px 0px;
+}
+
+
+
+.portfolio>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.portfolio-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.portfolio-blocks-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 590px;
+    justify-content: space-between;
+
+}
+
+.portfolio-blocks-item>p {
+    text-decoration: underline;
+}
+
+.contacts {
+    height: 622px;
+}
+
+.contacts-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.contacts-block-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+}
+
+.contacts-block-top>p {
+    text-align: center;
+}
+
+button {
+    width: 180.5px;
+    height: 42px;
+    background: black;
+    color: white;
+    font-family: 'Gilroy-Bold', sans-serif;
+    border: 0px solid;
+    border-radius: 20px;
+    font-size: 18px;
+
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 20px 1px #363636;
+
+}
+
+button:active {
+    transform: scale(1);
+    transition-duration: 0.3s;
+    transform: translateY(2px);
+}
+
+
+
+.fa-linkedin-in,
+.fa-behance {
+    border: 3.5px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+
+}
+
+.fa-linkedin-in {
+    padding-right: 10.5px;
+}
+
+.fa-instagram,
+.fa-dribbble {
+    font-size: 42px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons>a {
+    color: black;
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.fa-brands:hover {
+    border: 3.5px solid black;
+    border-radius: 7px;
+    color: white;
+    background-color: black;
+    transition-duration: 0.3s;
+
+}
+.fa-dribbble:hover{
+    border: 1.5px solid black;
+    border-radius: 20px ;
+}
+.contacts-block-bottom>p{
+ text-align: center;
+ font-size: 14px;
+ color:#828282;
+ 
+}
+.contacts-block-bottom{
+    height: 120px;
+    display: flex;
+    align-items:space-between;
+    flex-direction: column;
+    
+}
+.contacts-blocks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 80px;
+}
